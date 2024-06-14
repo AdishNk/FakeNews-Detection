@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif !important;
+}
+
+.nav_container {
+  height: 100px;
+  background-color: #d9ad2b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_logo_container {
+  display: flex;
+  margin-left: 40px;
+  align-items: center;
+}
+
+.logo_icon img {
+  width: 150px;
+  height: 100px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+}
+.logo_text img {
+  width: 150px;
+  height: 100px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+  zoom: 1.3;
+}
+.nav_items {
+  font-weight: 700;
+  font-size: 17px;
+  margin-left: 25vw;
+}
+
+.nav_items_ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav_items_links {
+  margin: 14px;
+  cursor: pointer;
+}
+
+.nav_buttons button {
+  width: 110px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  margin: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white;
+}
+
+.footer_container {
+  height: 140px;
+  background-color: #d9ad2b;
+}
+
+.footer_copyright_container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.footer_container ul {
+  list-style: none;
+}
+.footer_container ul li {
+  margin-top: 10px;
+  cursor: pointer;
+}
+.footer_content {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+
+.news_input {
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  margin-top: 11vh;
+  background-color: #FDF0CA;
+}
+
+.news_input:focus {
+  border-color: #d9ad2b;
+  outline: none;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+}
+
+.center_container{
+    height: 500px;
+}
+
+.news_submit_button{
+    width: 110px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  margin: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #d9ad2b;
+  color: white;
+  margin-left: 59vw;
+}
+
+.input_container{
+    display: flex;
+    justify-content: center;
+}
