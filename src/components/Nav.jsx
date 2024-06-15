@@ -1,5 +1,7 @@
+import { useNavigate } from "react-router-dom";
 
 function Nav() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="nav_container">
@@ -19,8 +21,12 @@ function Nav() {
           </ul>
         </div>
         <div className="nav_buttons">
-          <button className="login_btn">Login</button>
-          <button className="signup_btn">Signup</button>
+          <button onClick={() => navigate("/login")} className="login_btn">
+            Login
+          </button>
+          <button onClick={() => navigate("/signup")} className="signup_btn">
+            Signup
+          </button>
         </div>
       </div>
     </>
