@@ -1,6 +1,7 @@
 import { useState } from "react";
 import FreeUserResult from "../components/FreeUserResult";
 // import PremiumUserResult from "../components/PremiumUserResult";
+import axios from "axios"
 
 function Input() {
   const [news, setNews] = useState("");
@@ -11,7 +12,20 @@ function Input() {
   };
   const handleNewsSubmit = () => {
     console.log(news);
+    const wordCount = news.split(" ").length;
+    console.log(wordCount);
+    if (wordCount>= 600) {
+      alert("exceeding 600 words, Please take premium for unlimited word search");
+    }
     setresult(true);
+    axios
+      .post("http://127.0.0.1:5000/predict", news)
+      .then((response) => {
+        console.log("Data sent successfully:", response.prediction);
+      })
+      .catch((error) => {
+        console.error("There was an error sending the data!", error);
+      });
   };
   return (
     <>
