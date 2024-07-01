@@ -5,7 +5,7 @@ function PremiumUserResult() {
       <div className="res_container">
         <div className="res_result">false</div>
       </div>
-      <div className="premium_result_container">
+      {/* <div className="premium_result_container">
         <div className="facts_div">
           <div className="facts_div_head">Facts:</div>
           <p>hello</p>
@@ -15,7 +15,7 @@ function PremiumUserResult() {
 
           <p>hifdsijisj</p>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

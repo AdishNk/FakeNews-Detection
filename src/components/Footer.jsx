@@ -29,6 +29,7 @@ function Footer() {
             </ul>
           </div>
         </div>
+        <hr />
         <div className="footer_copyright_container">
           <h6>© 2024 xyz.com - All Rights Reserved</h6>
         </div>

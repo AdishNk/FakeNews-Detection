@@ -15,9 +15,9 @@ function Nav() {
         </div>
         <div className="nav_items">
           <ul className="nav_items_ul">
-            <li className="nav_items_links">Home</li>
-            <li className="nav_items_links">About</li>
-            <li className="nav_items_links">Premium</li>
+            <li className="nav_items_links" onClick={()=> navigate("/")}>Home</li>
+            <li className="nav_items_links" onClick={()=> navigate("/about")}>About</li>
+            <li className="nav_items_links" onClick={()=> navigate("/price")}>Premium</li>
           </ul>
         </div>
         <div className="nav_buttons">

@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Manrope", sans-serif !important;
+      font-family: 'Poppins' !important;
 }
 
 .nav_container {
   height: 100px;
-  background-color: #d9ad2b;
+  background-color:white ;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,20 +18,21 @@
   margin-left: 40px;
   align-items: center;
 }
-
+.nav_items_links:hover{
+  color: #254336;
+  
+}
 .logo_icon img {
   width: 150px;
   height: 100px;
   aspect-ratio: 3/2;
   object-fit: contain;
-  mix-blend-mode: color-burn;
 }
 .logo_text img {
   width: 150px;
   height: 100px;
   aspect-ratio: 3/2;
   object-fit: contain;
-  mix-blend-mode: color-burn;
   zoom: 1.3;
 }
 .nav_items {
@@ -65,13 +66,15 @@
 
 .footer_container {
   height: 140px;
-  background-color: #d9ad2b;
+  background-color: #B7B597;
 }
 
 .footer_copyright_container {
-  margin-top: 10px;
   display: flex;
   justify-content: center;
+  background-color: #B7B597;
+  padding-bottom: 20px;
+
 }
 .footer_container ul {
   list-style: none;
@@ -91,11 +94,11 @@
   height: 300px;
   padding: 10px;
   font-size: 16px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
+
+  border-radius: 20px;
   resize: none;
   margin-top: 11vh;
-  background-color: #fdf0ca;
+  background-color: #e7e5e2;
 }
 
 .news_input:focus {
@@ -108,6 +111,7 @@ textarea:focus, input:focus{
 }
 .center_container {
   height: 500px;
+  background-color: #F5F7F8;
 }
 
 .news_submit_button {
@@ -119,9 +123,16 @@ textarea:focus, input:focus{
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
-  background-color: #d9ad2b;
+  background-color: #254336;
   color: white;
   margin-left: 59vw;
+    transition: all .3s ease;
+
+}
+.news_submit_button:hover{
+    border: 1px solid #254336;
+  background-color: white;
+  color: #254336;
 }
 
 .input_container {
@@ -242,6 +253,27 @@ padding: 20px;
   border-color: #454545;
 
 }
+.login_btn{
+  background-color: #254336 !important;
+  color: white !important;
+  transition: all .3s ease !important;
+  
+}
+.login_btn:hover{
+  border: 1px solid #254336 !important;
+  background-color: white !important;
+  color: #254336 !important;
+  
+}
+
+.signup_btn{
+  border: 1px solid #254336 !important;
+  transition: all .3s ease !important;
+}
+.signup_btn:hover{
+  background-color: #254336 !important;
+  color:white ;
+}
 .login_container_inputs button{
   width: 25vw;
   margin: 20px 0;
@@ -267,4 +299,99 @@ input{
 .navbar_logo_home_page{
   display: flex;
   justify-content:center;
+}
+.price_head{
+  display: flex;
+  justify-content: center;
+
+}
+.price_head h1{
+  color: #254336;
+  margin-top:10px ;
+}
+.price_container{
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+.free_price, .premium_price{
+  width: 300px;
+  height: 450px;
+padding: 20px;
+margin: 40px;
+  background-color: #e7e5e2;
+  border-radius: 10px;
+}
+.free_price h1, .premium_price h1{
+  color: #254336;
+}
+.premium_price h1{
+margin-left: 5px;
+}
+.free_price p, .premium_price p{
+  padding: 8px 0 8px 0;
+
+}
+
+.free_price h4, .premium_price h4{
+  padding: 8px 0 8px 0;
+
+}
+.free_price ul li, .premium_price ul li{
+  font-size: 18px;
+  padding: 5px;
+  font-weight: bold;
+}
+.free_price_button_div{
+  margin-top: 80px;
+}
+.premium_price_button_div{
+  margin-top: 18px;
+}
+.premium_price_head_container{
+  display: flex;
+}
+.free_price_button, .premium_price_button{
+  width: 250px;
+  height: 40px;
+background-color: #254336;
+border-radius: 25px;
+border: none;
+margin-top: 20px;
+color:white;
+font-weight: bolder;
+cursor: pointer;
+    transition: all .3s ease;
+
+}
+.free_price_button:hover, .premium_price_button:hover{
+    border: 1px solid #254336;
+  background-color: white;
+  color: #254336;
+}
+
+.horizontal_line{
+border: 1px solid #254336;
+}
+
+.price_selected{
+  border: 2px solid black;
+}
+.about_heading{
+  display: flex;
+  justify-content: center;
+}
+
+.about_heading h1{
+  color: #254336;
+  font-weight: bold;
+  font-size: 25px;
+}
+.about_content{
+  padding: 10px 100px 10px 100px;
+}
+
+.bottom_center{
+  display: flex;
+  justify-content: center;
 }
