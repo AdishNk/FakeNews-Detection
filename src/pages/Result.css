@@ -1,0 +1,28 @@
+.result_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 150px);  /* Adjust based on your header and footer heights */
+  text-align: center;
+}
+
+.result_text {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.news_submit_button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #d4a017;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.news_submit_button:hover {
+  background-color: #b8860b;
+}
